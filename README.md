@@ -12,7 +12,7 @@ jm.scrollUp(fn)
 jm.scrollDown(fn)
 ```
 
-**A real-world example**
+**A real-world example:**
 
 Auto hiding website's Navbar when scroll down and show when scroll up.
 
