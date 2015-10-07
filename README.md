@@ -1,5 +1,9 @@
 # JM
 
+[![NPM version](https://img.shields.io/npm/v/jetmovement.svg?style=flat-square)](https://www.npmjs.com/package/jetmovement)
+[![NPM download](https://img.shields.io/npm/dm/jetmovement.svg?style=flat-square)](https://www.npmjs.com/package/jetmovement)
+[![David Status](https://img.shields.io/david/egoist/jetmovement.svg?style=flat-square)](https://david-dm.org/egoist/jetmovement)
+
 Jet Movement detects scrollUp and scrollDown movement for you.
 
 ## Introduction
