@@ -29,6 +29,8 @@ jm.scrollUp(() => {
 })
 ```
 
+Inspired by [Hide header on scroll down, show on scroll up](https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c).
+
 ## License
 
 MIT.
