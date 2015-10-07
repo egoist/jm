@@ -14,7 +14,7 @@ jm.scrollDown(fn)
 
 **A real-world example:**
 
-Auto hiding website's Navbar when scroll down and show when scroll up.
+Auto hiding website's Navbar when scroll down and show when scroll up, [see it alive](https://egoist.github.io/jm).
 
 ```javascript
 const header = document.querySelector('.header')

@@ -6,18 +6,62 @@
     <style>
       body {
         min-height: 200vmin;
+        font: 14px/1.4 Helvetica, serif;
+        background-color: #f9f9f9;
+      }
+      .header {
+        height: 50px;
+        background-color: #fff;
+        border-bottom: 1px solid #e2e2e2;
+        line-height: 50px;
+        text-align: center;
+        transform: translateY(0);
+        transition: transform .3s ease;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+      .hidden-header {
+        transform: translateY(-100%);
+      }
+      h1 {
+        margin: 0;
+      }
+      #main {
+        text-align: center;
+        padding: 300px 0;
+        font-size: 50px;
+      }
+      .footer {
+        text-align: center;
+        padding: 50px 0;
+        font-size: 24px;
       }
     </style>
   </head>
   <body>
+    <header class="header">
+      <h1>Jet Movement</h1>
+    </header>
+    <div id="main">
+      Uptown funk you up oh Uptown funk you up
+    </div>
+    <div class="footer">
+      <a href="https://github.com/egoist/jm">GitHub</a>
+    </div>
     <script src="jm.js"></script>
     <script>
-    jm.scrollUp(function () {
-      console.log('going top')
-    })
+    var header = document.querySelector('.header')
+    jm.navbarHeight = header.clientHeight
+
     jm.scrollDown(function () {
-      console.log('going bottom')
+      header.classList.add('hidden-header')
     })
+
+    jm.scrollUp(function () {
+      header.classList.remove('hidden-header')
+})
     </script>
   </body>
 </html>
