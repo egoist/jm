@@ -12,9 +12,40 @@ jm.scrollUp(fn)
 jm.scrollDown(fn)
 ```
 
-**A real-world example:**
+## A real-world example
 
 Auto hiding website's Navbar when scroll down and show when scroll up, [see it alive](https://egoist.github.io/jm).
+
+**HTML**:
+
+```html
+<header class="header">
+  <h1>Jet Movement</h1>
+</header>
+```
+
+**CSS**:
+
+```css
+.header {
+  height: 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #e2e2e2;
+  line-height: 50px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform .3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.hidden-header {
+  transform: translateY(-100%);
+}
+```
+
+**JavaScript**:
 
 ```javascript
 const header = document.querySelector('.header')
