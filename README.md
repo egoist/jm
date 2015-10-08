@@ -9,6 +9,8 @@ Jet Movement detects scrollUp and scrollDown movement for you.
 ## Introduction
 
 ```javascript
+import jm from 'jetmovement'
+
 // when you scroll the page up it excutes the function `fn`
 jm.scrollUp(fn)
 
