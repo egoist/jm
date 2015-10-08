@@ -78,9 +78,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     return JM;
   })();
 
+  var definition = function definition() {
+    return new JM();
+  };
+
   if (typeof W !== 'undefined') {
-    W.jm = (function () {
-      return new JM();
-    })();
+    W.jm = definition();
+  } else if (typeof module !== 'undefined') {
+    module.exports = definition();
   }
 })(window, document);

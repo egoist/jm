@@ -2,6 +2,7 @@ import gulp from 'gulp'
 import babel from 'gulp-babel'
 import serve from 'gulp-serve'
 import rename from 'gulp-rename'
+import uglify from 'gulp-uglify'
 
 const paths = {
   js: {
@@ -18,6 +19,9 @@ gulp.task('babel', () => {
   gulp.src(paths.js.main)
     .pipe(babel({stage: 0}))
     .pipe(rename('jm.js'))
+    .pipe(gulp.dest('./'))
+    .pipe(uglify())
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./'))
 })
 

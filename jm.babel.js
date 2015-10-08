@@ -55,9 +55,13 @@
         html.clientHeight, html.scrollHeight, html.offsetHeight)
     }
   }
+  const definition = () => {
+    return new JM()
+  }
+
   if (typeof W !== 'undefined') {
-    W.jm = (() => {
-      return new JM()
-    })();
+    W.jm = definition()
+  } else if (typeof module !== 'undefined') {
+    module.exports = definition()
   }
 })(window, document);

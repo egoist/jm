@@ -1,8 +1,8 @@
 {
   "name": "jetmovement",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "jm.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +13,7 @@
     "gulp": "^3.9.0",
     "gulp-babel": "^5.2.1",
     "gulp-rename": "^1.2.2",
-    "gulp-serve": "^1.2.0"
+    "gulp-serve": "^1.2.0",
+    "gulp-uglify": "^1.4.1"
   }
 }
